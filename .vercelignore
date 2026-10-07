@@ -1,0 +1,14 @@
+# Python scripts & data processing dumps
+*.py
+actors.json
+actors_wikidata.json
+
+# Firebase configuration (not used by Vercel)
+firebase.json
+.firebaserc
+
+# Dependencies & Build artifacts
+node_modules
+.next
+.vercel
+*.tsbuildinfo
