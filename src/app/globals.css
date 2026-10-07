@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #08080C;
+  --color-surface: #14141E;
+  --color-primary: #C5A880; /* Champagne Gold */
+  --color-primary-light: #E5D5C0; /* Soft Pale Gold */
+  --color-accent: #D4AF37; /* Bright Classic Gold */
+  --color-occupied: #22222E;
+  --color-wheelchair: #4A90E2;
+
+  --color-platinum: #F5F5F7;
+  --color-gold: #D4AF37;
+  --color-silver: #A1A1AA;
+
+  --shadow-glow-primary: 0 0 25px rgba(197, 168, 128, 0.2);
+  --shadow-glow-accent: 0 0 25px rgba(212, 175, 55, 0.25);
+  --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  :root {
+    --background: #08080C;
+    --foreground: #F5F5F7;
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  background-image: radial-gradient(circle at 50% -20%, #1a1510 0%, #08080c 100%);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
